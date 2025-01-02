@@ -17,7 +17,12 @@ app.use("/signup", SignupRouter);
 app.use("/login", SignupRouter);
 
 mongoose
-  .connect(mongo_uri)
+  .connect(mongo_uri, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+  })
   .then((success) => {
     console.log("Database connected");
 
