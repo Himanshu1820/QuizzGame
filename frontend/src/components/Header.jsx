@@ -202,7 +202,7 @@ const Header = () => {
                 <li
                   className=" cursor-pointer hover:text-cyan-300 hover:underline px-2 py-1 bg-blue-600"
                   onClick={() => {
-                    logout;
+                    logout();
                     setOpenMenu(!OpenMenu);
                   }}
                 >

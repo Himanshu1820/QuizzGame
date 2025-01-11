@@ -31,7 +31,7 @@ const Signup = () => {
                   password: password,
                 });
                 setTimeout(() => {
-                  navigate("/precautions");
+                  navigate("/games");
                 }, 500);
                 openToast(success.data.msg, "success");
               } else {
